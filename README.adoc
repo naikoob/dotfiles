@@ -1,0 +1,18 @@
+Config (dot) files managed using GNU stow. Inspired by https://github.com/xero/dotfiles
+
+== Pre-reqs
+powerline and powerline git-status:
+----
+pip install powerline-status
+pip install powerline-gitstatus
+----
+
+== Installation
+Clone to directory ~/.dotfiles and use GNU stow to install.
+For example
+----
+$ cd ~
+$ git clone --recursive https://github.com/naikoob/dotfiles.git .dotfiles
+$ cd ~/.dotfiles
+$ for dir in *; do [ -d $dir ] && stow $dir; done;
+----
