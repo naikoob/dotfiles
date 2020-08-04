@@ -4,6 +4,8 @@ export PATH=$HOME/.local/bin:$PATH
 # browser
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
+else
+  export BROWSER='xdg-open'
 fi
 
 # editors
