@@ -11,3 +11,5 @@ setopt SHARE_HISTORY
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
+alias history="history 1"
+

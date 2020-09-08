@@ -10,3 +10,15 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 # partial completion suggestions
 zstyle ':completion:*' list-suffixes
 zstyle ':completion:*' expand prefix suffix
+
+# openshift
+if type "oc" > /dev/null; then
+    source <(oc completion zsh)
+fi
+
+# terraform
+if type "terraform" > /dev/null; then
+    autoload -U +X bashcompinit && bashcompinit
+    complete -o nospace -C terraform terraform
+fi
+
