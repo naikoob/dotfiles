@@ -11,7 +11,7 @@ set $screenclip slurp | grim -g - ~/Images/screenshots/scrn-$(date +"%Y-%m-%d-%H
 set $background ~/.images/bicycle-warm.jpg
 
 #set $cl_high #009ddc
-set $cl_high #ed9c00
+set $cl_high #f07746
 set $cl_indi #d9d8d8
 set $cl_back #231f20
 set $cl_fore #d9d8d8
@@ -48,10 +48,10 @@ set $wsF11 21:
 set $wsF12 22:
 
 # Font
-font pango:Saira 16
+font pango:Saira 15
 
 # Window borders
-default_border pixel 4
+default_border pixel 3
 default_floating_border normal
 hide_edge_borders smart
 
@@ -62,6 +62,7 @@ gaps inner 8
 exec --no-startup-id mako
 exec keeweb --force-device-scale-factor=1.4
 exec spotify
+exec_always ~/.config/waybar/waybar.sh
 
 # Input configuration
 input * {
@@ -71,6 +72,8 @@ input * {
 # Output configuration
 output * bg $background fill
 
+# Applications
+#
 # Default workspaces for common programs
 assign [class="^Chromium$"] $ws1
 assign [class="^Code$"] $ws2
@@ -79,6 +82,11 @@ assign [class="^KeeWeb$"] $wsF11
 assign [class="^Spotify$"] $wsF12
 # workaround for spotify [https://github.com/swaywm/sway/issues/3793]
 for_window [class="Spotify"] move container to workspace $wsF12
+
+# auto float these
+for_window [app_id="blueman-manager"] floating enable
+for_window [app_id="pavucontrol"] floating enable
+for_window [app_id="qalculate-gtk"] floating enable
 
 # Shortcuts
 bindsym $mod+Return exec $term
@@ -158,6 +166,10 @@ bindsym $mod+F10 workspace $wsF10
 bindsym $mod+F11 workspace $wsF11
 bindsym $mod+F12 workspace $wsF12
 
+# page up/down to cycle through worksapces
+bindsym $mod+Prior workspace prev
+bindsym $mod+Next  workspace next 
+
 # move focused container to workspace
 bindsym $mod+Shift+1    move container to workspace $ws1
 bindsym $mod+Shift+2    move container to workspace $ws2
@@ -233,8 +245,6 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 bindsym $mod+Shift+e mode "$mode_system"
-
-exec_always ~/.config/waybar/waybar.sh
 
 include ~/.config/sway/$(hostname)/*
 
