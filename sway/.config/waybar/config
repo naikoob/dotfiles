@@ -5,7 +5,7 @@
 
     "modules-left": ["sway/workspaces", "sway/mode"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray", "backlight", "pulseaudio", "network", "idle_inhibitor", "clock"],
+    "modules-right": ["tray", "pulseaudio", "network", "idle_inhibitor", "clock"],
     "sway/mode": {
         "format": " {}"
     },
@@ -43,7 +43,7 @@
             "disconnected": ["⚠"]
         },
         "on-click": "termite -e nmtui",
-    "tooltip": false
+        "tooltip": false
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
@@ -114,7 +114,7 @@
         "interval": 5
     },
     "tray": {
-        "icon-size": 18
+        "icon-size": 26
     }
 }
 
