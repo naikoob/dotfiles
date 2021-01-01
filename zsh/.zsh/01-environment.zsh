@@ -24,3 +24,6 @@ export XMODIFIERS=@im=fcitx
 export QT_SCALE_FACTOR=1.6
 export QT_STYLE_OVERRIDE=adwaita
 
+# so rofi can find flatpak apps
+export XDG_RUNTIME_DIRS=$XDG_RUNTIME_DIRS:/var/lib/flatpak/exports/share:~/.local/share/flatpak/exports/share
+
