@@ -17,6 +17,6 @@ if type vscode >& /dev/null; then
 fi
 
 if [[ "$OSTYPE" == darwin* ]]; then
-    alias podman='podman --url tcp://podhost:31887'
+    alias podman='podman --identity=/Users/bookian/.ssh/id_rsa --url=ssh://root@podhost/run/podman/podman.sock'
 fi
 
