@@ -1,5 +1,5 @@
 # Aliases
-alias ls='ls -F --color=auto'
+alias ls='ls -FG'
 alias ll='ls -lh'
 alias la='ls -a'
 alias df='df -H'
