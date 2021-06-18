@@ -88,6 +88,17 @@ scroll-down = i3wm-wsprev
 modules-left = i3
 modules-center = title
 modules-right = bluetooth volume date
+
+;== tray ==========================================================
+tray-postion = right
+tray-padding = 4
+tray-detached = false
+tray-maxsize = 16
+tray-offset-x = 0
+tray-offset-y = 0
+tray-scale = 1.0
+
+wm-restack = i3 
  
 ;== Modules ========================================================
 
@@ -185,13 +196,13 @@ label-maxlen = 100
 
 [module/bluetooth]
 type = custom/script
-exec = ~/.local/bin/scripts/bluetoothctl.sh
+exec = ~/.local/bin/scripts/bluetooth-status.sh
 tail = true
 format-background = ${color.shade6}
 format-foreground = ${color.fg}
 format-padding = 4
 click-left = blueman-manager
-click-right = ~/.local/bin/scripts/bluetoothctl.sh --toggle &
+click-right = ~/.local/bin/scripts/bluetooth-status.sh --toggle
 
 [module/volume]
 type = internal/pulseaudio
@@ -211,13 +222,11 @@ ramp-volume-2 = 
 click-right = pavucontrol
 
 [module/network]
-type = custom/script
-exec = ~/.config/polybar/scripts/check-network
-format-background = ${color.shade4}
-format-padding = 4
-click-left = networkmanager_dmenu &
-click-right = networkmanager_dmenu &
-tail = true
+type = internal/network
+interface = enp7s0
+format-connected = <label-connected>
+label-connected =   %local_ip%
+label-connected-padding = 4
 
 [module/date]
 type = internal/date
@@ -230,9 +239,9 @@ time-alt =  %I:%M %p | %d/%m/%Y
 
 [module/powermenu]
 type = custom/text
-content = 襤
+content = 
 content-padding = 2
-content-background = ${color.shade2}
+content-background = ${color.orange}
 content-foreground = ${color.fg}
 ;click-left = ~/.config/polybar/scripts/sysmenu
 ;click-right = ~/.config/polybar/scripts/sysmenu
