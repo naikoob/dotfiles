@@ -1,6 +1,6 @@
 Config (dot) files managed using GNU stow, inspired by https://github.com/xero/dotfiles
 
-Features i3wm, and note that I'm using i3-cinnamon session for convenience, get it here -> htps://github.com/jthomaschewski/i3-cinnamon
+Features i3wm, and note that I'm using i3-cinnamon session for convenience, get it here -> https://github.com/jthomaschewski/i3-cinnamon
 
 == Pre-reqs
 powerline and powerline git-status. Use the version provided by your Linux distro, otherwise install using pip:
