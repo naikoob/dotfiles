@@ -1,0 +1,107 @@
+configuration {
+	font:							"Saira 18";
+    show-icons:                     true;
+	icon-theme: 					"WhiteSur-grey-dark";
+    display-drun: 					"";
+    drun-display-format:            " {name}";
+    disable-history:                false;
+    fullscreen:                     true;
+	hide-scrollbar: 				true;
+	sidebar-mode: 					false;
+}
+
+@import "colors.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @bg;
+    text-color:                     @fg;
+	border:							0px;
+	border-color:					@border;
+    border-radius:                  0px;
+    width:                          68%;
+}
+
+prompt {
+    enabled: 						true;
+	padding: 						0% 1% 0% 0%;
+	background-color: 				@al;
+	text-color: 					@fg;
+	font:							"Font Awesome 5 Free Solid 48";
+}
+
+entry {
+    background-color:               @al;
+    text-color:                     @fg;
+    placeholder-color:              @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    padding:                        0.6% 1% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	font:							"Saira 18";
+	children: 						[ prompt, entry ];
+    background-color:               @se;
+    text-color:                     @fg;
+    expand:                         false;
+	border:							0% 0% 0% 0%;
+    border-radius:                  12px;
+	border-color:					@accent;
+    margin:                         2% 0% -5% 0%;
+    padding:                        1.5%;
+}
+
+listview {
+    background-color:               @al;
+    columns:                        6;
+    lines:                          4;
+    spacing:                        0.1%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @al;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0% 0% 0% 0%;
+	border-color:					@ac;
+    children:                       [ inputbar, listview ];
+    spacing:                       	10% 10% 10% 10%;
+    padding:                        4% 8% 5% 8%;
+}
+
+element {
+    background-color:               @bg;
+    text-color:                     @fg;
+    orientation:                    vertical;
+    border-radius:                  0%;
+    padding:                        2% 1% 2% 1%;
+}
+
+element-icon {
+    background-color:               @al;
+    size:                           120px;
+    border:                         0px;
+}
+
+element-text {
+    font:                           "Saira 18";
+    background-color:               @al;
+    text-color:                     inherit;
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0.5% 0.5% -0.5% 0.5%;
+}
+
+element selected {
+    background-color:               @se;
+    text-color:                     @fg;
+	border:							0% 0% 0% 0%;
+    border-radius:                  12px;
+    border-color:                  	@accent;
+}
