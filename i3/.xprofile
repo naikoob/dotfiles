@@ -7,4 +7,9 @@ export QT_STYLE_OVERRIDE=kvantum
 # need this so that i3 can launch terminal-based apps
 export TERMINAL=gnome-terminal
 
+# input source
+export XMODIFIERS="@im=fcitx"
+export QT_IM_MODULE=fcitx
+export GTK_IM_MODULE=fcitx
+
 

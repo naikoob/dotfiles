@@ -200,6 +200,8 @@ bindsym $mod+Shift+e mode "$mode_system"
 for_window [class="Nemo"] floating enable 
 for_window [class="Blueman-manager"] floating enable
 for_window [class="cinnamon-settings*"] floating enable
+for_window [class="Cinnamon-settings*"] floating enable
+for_window [class="Fcitx-config-gtk3*"] floating enable
 
 # fix these workspaces
 for_window [class="Code"] move container to workspace $ws2
@@ -211,3 +213,9 @@ for_window [class="Spotify*"] move container to workspace $ws10
 
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+
+# automatically start these apps
+exec --no-startup-id /usr/libexec/notification-daemon -r
+exec --no-startup-id i3-msg 'workspace $ws9; exec /usr/bin/keepassxc'
+
+
