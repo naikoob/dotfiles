@@ -215,7 +215,8 @@ for_window [class="Spotify*"] move container to workspace $ws10
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # automatically start these apps
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start 
 exec --no-startup-id /usr/libexec/notification-daemon -r
-exec --no-startup-id i3-msg 'workspace $ws9; exec /usr/bin/keepassxc'
+exec --no-startup-id i3-msg 'workspace $ws9; exec ~/.local/bin/keepassxc.sh'
 
 
