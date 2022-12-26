@@ -202,21 +202,27 @@ for_window [class="Blueman-manager"] floating enable
 for_window [class="cinnamon-settings*"] floating enable
 for_window [class="Cinnamon-settings*"] floating enable
 for_window [class="Fcitx-config-gtk3*"] floating enable
-for_window [class="Nm-connection-editor*"] floating enable
 for_window [class="gnome-calculator"] floating enable
+for_window [class="KeePassXC*"] floating enable
+for_window [class="Nm-connection-editor*"] floating enable
+
+# remove titlebar for chrome
+for_window [class="Google-chrome*"] border pixel 2
 
 # fix these workspaces
 for_window [class="Code"] move container to workspace $ws2
+for_window [class="obsidian"] move container to workspace $ws4
 for_window [class="Rhythmbox"] move container to workspace $ws6
 for_window [class="vlc"] move container to workspace $ws6
 for_window [class="Steam*"] move container to workspace $ws8
 for_window [class="Spotify*"] move container to workspace $ws10
 
 # automatically start these apps
+exec --no-startup-id ~/.screenlayout/mirror.sh
 exec --no-startup-id /usr/bin/pulseaudio --start
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start 
 exec --no-startup-id /usr/libexec/notification-daemon -r
-exec --no-startup-id i3-msg 'workspace $ws9; exec ~/.local/bin/keepassxc.sh'
+exec --no-startup-id ~/.local/bin/keepassxc.sh
 
 # start polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh
