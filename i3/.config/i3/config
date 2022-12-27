@@ -22,8 +22,8 @@ default_floating_border pixel 3
 hide_edge_borders smart
 
 # use gaps!
-smart_gaps on
-gaps inner 5
+#smart_gaps on
+#gaps inner 5
 
 # Colors
 set $cl_high #f07746
