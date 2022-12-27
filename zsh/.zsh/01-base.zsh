@@ -17,6 +17,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias diff='diff --color=auto'
 fi
 
+# prefer vi
+export EDITOR=vi
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
