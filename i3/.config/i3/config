@@ -22,8 +22,8 @@ default_floating_border pixel 3
 hide_edge_borders smart
 
 # use gaps!
-#smart_gaps on
-#gaps inner 5
+smart_gaps on
+gaps inner 5
 
 # Colors
 set $cl_high #f07746
@@ -219,7 +219,8 @@ for_window [class="Spotify*"] move container to workspace $ws10
 
 # automatically start these apps
 exec --no-startup-id ~/.screenlayout/mirror.sh
-exec --no-startup-id /usr/bin/pulseaudio --start
+exec --no-startup-id /usr/bin/fcitx5
+exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/gnome-keyring-daemon --start 
 exec --no-startup-id /usr/libexec/notification-daemon -r
 exec --no-startup-id ~/.local/bin/keepassxc.sh
