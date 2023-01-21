@@ -1,7 +1,7 @@
 configuration {
 	font:                           "Saira 18"; 
     show-icons:                     true;
-	icon-theme:                     "WhiteSur-grey-dark";
+	icon-theme:                     "WhiteSur-orange-dark";
     display-drun:                   "";
     drun-display-format:            " {name}";
     disable-history:                false;
