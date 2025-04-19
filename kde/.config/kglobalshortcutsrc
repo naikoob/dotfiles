@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-978b02b2-d812-47f5-8cd7-539cc5f91060=none,none,Switch to activity "Default"
 switch-to-activity-c0428a54-e9bc-4ca9-b214-757230793662=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -125,9 +126,9 @@ Switch to Desktop 6=Meta+6,,Switch to Desktop 6
 Switch to Desktop 7=Meta+7,,Switch to Desktop 7
 Switch to Desktop 8=Meta+8,,Switch to Desktop 8
 Switch to Desktop 9=Meta+9,,Switch to Desktop 9
-Switch to Next Desktop=Meta+PgDown,,Switch to Next Desktop
+Switch to Next Desktop=Ctrl+Alt+Right,,Switch to Next Desktop
 Switch to Next Screen=none,,Switch to Next Screen
-Switch to Previous Desktop=Meta+PgUp,,Switch to Previous Desktop
+Switch to Previous Desktop=Ctrl+Alt+Left,,Switch to Previous Desktop
 Switch to Previous Screen=none,,Switch to Previous Screen
 Switch to Screen 0=none,,Switch to Screen 0
 Switch to Screen 1=none,,Switch to Screen 1
@@ -216,9 +217,9 @@ Window to Desktop 6=Meta+^,,Window to Desktop 6
 Window to Desktop 7=Meta+&,,Window to Desktop 7
 Window to Desktop 8=Meta+*,,Window to Desktop 8
 Window to Desktop 9=Meta+(,,Window to Desktop 9
-Window to Next Desktop=none,,Window to Next Desktop
+Window to Next Desktop=Ctrl+Alt+Shift+Right,,Window to Next Desktop
 Window to Next Screen=none,Meta+Shift+Right,Move Window to Next Screen
-Window to Previous Desktop=none,,Window to Previous Desktop
+Window to Previous Desktop=Ctrl+Alt+Shift+Left,,Window to Previous Desktop
 Window to Previous Screen=none,Meta+Shift+Left,Move Window to Previous Screen
 Window to Screen 0=none,,Move Window to Screen 0
 Window to Screen 1=none,,Move Window to Screen 1
@@ -274,7 +275,7 @@ activate task manager entry 6=none,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
-activate widget 117=,none,Activate Application Dashboard Widget
+activate widget 117=none,none,Activate Application Dashboard Widget
 activate widget 70=none,none,Activate Application Dashboard Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
