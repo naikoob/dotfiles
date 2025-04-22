@@ -4,9 +4,38 @@ switch-to-activity-978b02b2-d812-47f5-8cd7-539cc5f91060=none,none,Switch to acti
 switch-to-activity-c0428a54-e9bc-4ca9-b214-757230793662=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
+
+[com.google.Chrome]
+_k_friendly_name=com.google.Chrome
+choose_credential_fields=none,none,Choose Custom Login Fields
+enter-zapper-mode=none,none,Enter element zapper mode
+fill_password=Alt+Shift+P,Alt+Shift+P,Fill Password Only
+fill_totp=Alt+Shift+O,Alt+Shift+O,Fill TOTP
+fill_username_password=Alt+Shift+U,Alt+Shift+U,Fill Username and Password
+redetect_fields=none,none,Redetect login fields
+reload_extension=none,none,Reload
+request_autotype=none,none,Request Global Auto-Type
+retrive_credentials_forced=none,none,Reopen database
+save_credentials=none,none,Save Credentials
+show_password_generator=Alt+Shift+G,Alt+Shift+G,Show Password Generator
+
+[google-chrome]
+_k_friendly_name=google-chrome
+choose_credential_fields=none,none,Choose Custom Login Fields
+enter-zapper-mode=none,none,Enter element zapper mode
+fill_password=none,Alt+Shift+P,Fill Password Only
+fill_totp=none,Alt+Shift+O,Fill TOTP
+fill_username_password=none,Alt+Shift+U,Fill Username and Password
+redetect_fields=none,none,Redetect login fields
+reload_extension=none,none,Reload
+request_autotype=none,none,Request Global Auto-Type
+retrive_credentials_forced=none,none,Reopen database
+save_credentials=none,none,Save Credentials
+show_password_generator=none,Alt+Shift+G,Show Password Generator
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -276,6 +305,7 @@ activate task manager entry 7=none,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=none,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=none,Meta+9,Activate Task Manager Entry 9
 activate widget 117=none,none,Activate Application Dashboard Widget
+activate widget 54=none,none,Activate Application Dashboard Widget
 activate widget 70=none,none,Activate Application Dashboard Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
@@ -295,7 +325,7 @@ switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
 [services][org.kde.spectacle.desktop]
-RecordRegion=\t
+RecordRegion=none
 
 [wacomtablet]
 Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Map to fullscreen

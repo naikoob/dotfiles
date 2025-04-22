@@ -25,9 +25,12 @@
                "use_path_separator":true
             }
          },
-         {
-            "function":"powerline_gitstatus.gitstatus",
-            "priority":40
+         { 
+            "function":"powerline.segments.common.vcs.branch",
+            "priority":40,
+            "args":{
+               "status_colors":true
+            }
          },
          {
             "function":"powerline.segments.shell.jobnum",
