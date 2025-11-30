@@ -25,6 +25,7 @@ alias l='ls -CF'
 # other aliases
 alias df='df -h'
 alias free='free -h'
+alias python=python3
 
 # use htop instead of top
 [ -x /usr/bin/htop ] && alias top='htop'
