@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=KeePassXC Unlock
+Comment=Unlock KeePassXC database at login
+Exec=kwallet-query -r KeePassXC kdewallet | keepassxc --pw-stdin --keyfile ~/.config/keepassxc/keepass.keyz ~/Nextcloud/Vault/passwordz.kdbx
+Icon=emblem-encrypted-unlocked
+Type=Application
